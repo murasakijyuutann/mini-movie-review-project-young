@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import MovieDetail from './components/MovieDetail';
 import MovieMore from './components/MovieMore';
-import './app.css';
+import './App.css';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import MenuBar from './components/MenuBar';
