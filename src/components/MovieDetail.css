@@ -1,0 +1,48 @@
+.movie {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5개 열을 1fr씩 나눔 */
+  gap: 10px; /* 항목 사이에 간격 추가 */
+  justify-items: center; /* 항목들을 가운데 정렬 */
+}
+
+.movie-card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 이미지와 텍스트가 너무 멀어지지 않도록 설정 */
+  align-items: center; /* 카드 내용을 가운데 정렬 */
+  background-color: #c19a6b;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px; /* 카드 안쪽 여백 */
+  overflow: hidden; /* 이미지가 카드 영역을 벗어나지 않도록 */
+  height: 375px; /* 카드 높이를 고정 */
+  width: 250px; /* 카드 너비 설정 */
+  text-decoration: none;
+}
+
+.movie-card p {
+  color: #fff5e1;
+  font-size: 20px;
+  font-weight: 800; /* 기본 굵기 */
+}
+
+/* 호버 효과 */
+.movie-card:hover {
+  transform: translateY(-5px); /* 카드를 살짝 위로 올려서 강조 */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 그림자 강하게 추가 */
+  cursor: pointer; /* 마우스를 올리면 클릭할 수 있는 느낌을 줍니다 */
+}
+
+.image {
+  width: 100%; /* 이미지 너비를 카드 너비에 맞추기 */
+  height: 300px; /* 이미지 높이 고정 */
+  object-fit: contain; /* 이미지 비율 유지하면서 카드 영역을 꽉 채우도록 설정 */
+  margin-bottom: 5px; /* 이미지와 텍스트 간 간격을 줄임 */
+}
+
+.card-name {
+  font-size: 18px; /* 텍스트 크기 */
+  margin-top: 0; /* 텍스트와 이미지 사이의 간격을 줄임 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+}

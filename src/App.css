@@ -1,0 +1,159 @@
+.Menu-bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #bc8a5a;
+  padding: 10px;
+}
+
+/* 링크/텍스트 기본 */
+.Menu-bar a {
+  text-decoration: none;
+}
+.Menu-bar p {
+  margin: 0;
+  padding: 0;
+}
+
+.Main {
+  cursor: pointer;
+  font-size: 32px;
+  color: #f5f5dc;
+}
+
+/* 가운데 영역 */
+.Menu-button {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.Menu-button-list {
+  display: flex;
+  gap: 20px;
+  color: #f5f5dc;
+  font-size: 24px;
+}
+
+/* search */
+.search {
+  background-color: #a6784d;
+}
+.search:hover {
+  background-color: #f5f5dc;
+  color: #bc8a5a;
+}
+
+.search-box {
+  width: 300px;
+  height: 40px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* 우측 설정 영역 */
+.Menu-setting {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  color: #f5f5dc;
+  font-size: 20px;
+}
+.Menu-setting a {
+  text-decoration: none;
+  color: #f5f5dc;
+}
+
+/* ===== Language Button & Popover (스코프: Menu-setting) ===== */
+.lang-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* ✅ 여기만 사용: 언어 버튼 */
+.Menu-setting .language {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background-color: #a6784d;
+  color: #f5f5dc;
+  transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+.Menu-setting .language:hover {
+  background-color: #f5f5dc;
+  color: #bc8a5a;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* 팝오버 */
+.lang-popover {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 160px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
+  padding: 6px;
+  display: grid;
+  gap: 4px;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(-6px) scale(0.98);
+  animation: lang-popover-in 0.14s ease-out forwards;
+}
+
+@keyframes lang-popover-in {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 팝오버 항목 */
+.lang-item {
+  text-align: left;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #333;
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+.lang-item:hover {
+  background: #f8f5ef;
+}
+.lang-item.active {
+  background: #f0e6d7;
+  color: #7b5736;
+  font-weight: 700;
+}
+
+/* 배경 */
+.Routes-container {
+  background-color: beige;
+  min-height: 100vh;
+}
+
+/* 반응형 */
+@media (max-width: 640px) {
+  .search-box {
+    width: 180px;
+  }
+  .Menu-button {
+    gap: 6px;
+  }
+}
+
+.auth-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f5f5dc;
+}

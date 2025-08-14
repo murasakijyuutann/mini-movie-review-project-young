@@ -1,0 +1,46 @@
+/* 전체 페이지 스타일 */
+.SignUp-page {
+  margin: 0;
+  padding: 40px;
+  height: 100%; /* 전체 높이를 100%로 설정 */
+  display: flex;
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: flex-start; /* 수직 상단 정렬 */
+}
+
+.sign-up-container {
+  background-color: white; /* 회원가입 창 배경을 하얀색으로 */
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px; /* 최대 너비를 400px로 설정 */
+  box-sizing: border-box; /* 패딩을 포함한 전체 크기 계산 */
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Form 스타일 */
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input 스타일 */
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,35 @@
+.Movie-more {
+  display: flex;
+  gap: 20px;
+}
+
+.Movie-post {
+  width: 500px;
+  height: auto;
+}
+
+.More-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.menu-title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.menu-average {
+  font-size: 32px;
+}
+
+.menu-overview {
+  font-size: 24px;
+  color: black;
+  width: 80%;
+  background-color: lightgreen;
+  padding: 20px;
+  border-radius: 20px;
+}
